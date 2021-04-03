@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TelefonRehberiDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="adminUserName" />
+    </Key>
+    <Property Name="adminUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TelefonRehberiDBEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin" EntityType="Self.Admin" />
+    <EntitySet Name="Calisanlar" EntityType="TelefonRehberiDBModel.Calisanlar" />
+    <EntitySet Name="Departmanlar" EntityType="TelefonRehberiDBModel.Departmanlar" />
+    <AssociationSet Name="FK_Calisanlar_Departmanlar" Association="TelefonRehberiDBModel.FK_Calisanlar_Departmanlar">
+      <End Role="Departmanlar" EntitySet="Departmanlar" />
+      <End Role="Calisanlar" EntitySet="Calisanlar" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Calisanlar">
+    <Key>
+      <PropertyRef Name="calisanID" />
+    </Key>
+    <Property Name="calisanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="telefon" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="departmanID" Type="Int32" />
+    <Property Name="yoneticiID" Type="Int32" />
+    <NavigationProperty Name="Departmanlar" Relationship="TelefonRehberiDBModel.FK_Calisanlar_Departmanlar" FromRole="Calisanlar" ToRole="Departmanlar" />
+  </EntityType>
+  <EntityType Name="Departmanlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="departmanAdi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Calisanlar" Relationship="TelefonRehberiDBModel.FK_Calisanlar_Departmanlar" FromRole="Departmanlar" ToRole="Calisanlar" />
+  </EntityType>
+  <Association Name="FK_Calisanlar_Departmanlar">
+    <End Type="TelefonRehberiDBModel.Departmanlar" Role="Departmanlar" Multiplicity="1" />
+    <End Type="TelefonRehberiDBModel.Calisanlar" Role="Calisanlar" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Departmanlar">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Calisanlar">
+        <PropertyRef Name="calisanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

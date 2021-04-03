@@ -1,0 +1,20 @@
+﻿@model String
+
+<div class="modal fade" id="deleteMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger" id="exampleModalCenterTitle">Dikkat</h5>
+
+            </div>
+            <div class="modal-body">
+                @Model
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hayır</button>
+                <button id="resultOK" onclick="ResultOK()" type="button" class="btn btn-success">Evet</button>
+
+            </div>
+        </div>
+    </div>
+</div>

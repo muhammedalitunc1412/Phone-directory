@@ -1,0 +1,69 @@
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.csprojResolveAssemblyReference.cache
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.csproj.CoreCompileInputs.cache
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\Telefon Rehberi MVC.dll.config
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\Telefon Rehberi MVC.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\Telefon Rehberi MVC.pdb
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\EntityFramework.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\EntityFramework.SqlServer.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\Microsoft.Web.Infrastructure.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Helpers.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Mvc.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Razor.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Webpages.Deployment.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Webpages.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Webpages.Razor.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\EntityFramework.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\EntityFramework.SqlServer.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Razor.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Webpages.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Webpages.Deployment.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Webpages.Razor.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Helpers.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\System.Web.Mvc.xml
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\tr\System.Web.Razor.resources.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\tr\System.Web.Webpages.resources.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\tr\System.Web.Webpages.Deployment.resources.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\tr\System.Web.Webpages.Razor.resources.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\tr\System.Web.Helpers.resources.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\bin\tr\System.Web.Mvc.resources.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.dll
+c:\users\semih\source\repos\Telefon Rehberi MVC\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.pdb
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\Telefon Rehberi MVC.dll.config
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\Telefon Rehberi MVC.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\Telefon Rehberi MVC.pdb
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\EntityFramework.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Helpers.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Mvc.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Razor.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Webpages.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Webpages.Razor.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\TelefonRehberi.Dto.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\TelefonRehberi.Entity.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\TelefonRehberi.Dto.pdb
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\TelefonRehberi.Entity.pdb
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\TelefonRehberi.Entity.dll.config
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\EntityFramework.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Razor.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Webpages.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Webpages.Razor.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Helpers.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\System.Web.Mvc.xml
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\tr\System.Web.Razor.resources.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.csproj.CopyComplete
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.dll
+C:\Users\ASUS\source\repos\rehber3\Telefon Rehberi MVC\obj\Debug\Telefon Rehberi MVC.pdb

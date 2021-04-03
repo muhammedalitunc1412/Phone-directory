@@ -1,0 +1,77 @@
+﻿@model List<TelefonRehberi.Dto.Departman.DepartmanListModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    TelefonRehberi.Entity.Admin logonAdmin = (TelefonRehberi.Entity.Admin)Session["LogonAdmin"];
+}
+<h4>@ViewData["error"]</h4>
+<div class="row">
+    <span class="col-md-6 col-xs-6" style="font-size:20pt">Departman Listesi</span>
+    <div class="col-md-6 col-xs-6 text-right">
+        <a class="btn btn-success" href="~/Home/DepartmanCreate" style="margin-right:20px;">Departman Ekle</a>
+    </div>
+</div>
+<hr />
+<div>
+
+    <table class="table table-condensed table-striped table-hover text-center">
+
+        <thead>
+            <tr>
+                <!--th*4>{kolon adı}-->
+                <th class="text-center">Departman Adı</th>
+                <th class="text-center">Personel Sayısı</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.departman.adi</td>
+                    <td>@item.PersonelSayisi</td>
+                    <td>
+                        @if (item.PersonelSayisi == 0)
+                        {
+
+                            <a type="button" onclick="Delete('@Url.Action("Delete","Home", new { id = item.departman.id })')" class="btn btn-danger ">
+                                <span class="fa fa-trash "></span> Sil
+                            </a>
+                        }
+                        else
+                        {
+
+                            <a type="button" onclick="Delete('@Url.Action("Delete","Home", new { id = 0 })')" class="btn btn-danger "> <span class="fa fa-trash "></span> Sil</a>
+                        }
+                    </td>
+                    <td></td>
+                </tr>
+            }
+
+        </tbody>
+
+
+
+    </table>
+
+    <hr />
+
+</div>
+
+
+
+@if (TempData["resultInfo"] != null)
+{
+
+
+    @Html.Partial("InfoModal");
+
+    <script>
+        $('#exampleModalCenter').modal('show');
+    </script>
+}
+@Html.Partial("ResultControl", "Silmek istediğinize emin misiniz?")
+
+
+

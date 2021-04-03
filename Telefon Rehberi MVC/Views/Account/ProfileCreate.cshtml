@@ -1,0 +1,92 @@
+﻿
+@model TelefonRehberi.Entity.Calisanlar
+
+
+@{
+
+
+    ViewBag.Title = "Create Profile";
+}
+<style>
+    div .form-horizontal {
+        font-size: 12pt;
+    }
+</style>
+<h2 style="text-align:center">Profil Düzenleme</h2>
+<div class="row">
+    <hr class="col-md-10 col-md-offset-1" />
+</div>
+<h4>@ViewBag.error</h4>
+
+@using (Html.BeginForm("ProfileCreate", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal col-md-offset-1">
+
+
+        <div class=" form-group">
+
+            @Html.LabelFor(model => model.ad, "İsim", htmlAttributes: new { @class = "control-label col-md-2", @style = "text-align:left;" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ad, new { htmlAttributes = new { @class = "form-control", maxlength = "15", required = "required" } })
+                @Html.ValidationMessageFor(model => model.ad, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.soyad, "Soyisim", htmlAttributes: new { @class = "control-label col-md-2", @style = "text-align:left;" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.soyad, new { htmlAttributes = new { @class = "form-control", maxlength = "15", required = "required" } })
+                @Html.ValidationMessageFor(model => model.soyad, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.telefon, "Telefon", htmlAttributes: new { @class = "control-label col-md-2", @style = "text-align:left;" })
+            <div class="col-md-8">
+                @Html.Editor("Telefon", new { htmlAttributes = new { @class = "form-control",id="phone", type = "tel", maxlength = "10", required = "required" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.yoneticiId, "Yönetici Adı", htmlAttributes: new { @class = "control-label col-md-2", @style = "text-align:left;" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.yoneticiId, (List<SelectListItem>)ViewBag.yoneticiList, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.yoneticiId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.departmanId, "Departman Adı", htmlAttributes: new { @class = "control-label col-md-2", @style = "text-align:left;" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.departmanId, (List<SelectListItem>)ViewBag.departmanList, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.departmanId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-8">
+                <input type="submit" value="Save" class="btn btn-info pull-right" />
+            </div>
+        </div>
+    </div>
+}
+
+<script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        $('#phone').usPhoneFormat({
+            format: '(xxx) xxx-xxxx',
+        });
+
+    
+    });
+
+</script>

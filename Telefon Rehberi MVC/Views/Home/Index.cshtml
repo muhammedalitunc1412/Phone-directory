@@ -1,0 +1,106 @@
+﻿@model List<TelefonRehberi.Entity.Calisanlar>
+
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    TelefonRehberi.Entity.Admin logonAdmin = (TelefonRehberi.Entity.Admin)Session["LogonAdmin"];
+}
+
+<style>
+    .modal {
+        position: fixed;
+        top: 20%;
+        left: 0%;
+    }
+</style>
+<h2 style="margin-bottom:0px; text-align:center">Personel Listesi</h2>
+<hr class="col-md-offset-3 col-md-6"/>
+
+
+
+
+<div>
+
+    <table class="table table-condensed table-striped table-hover text-center">
+
+        <thead>
+            <tr>
+                <!--th*4>{kolon adı}-->
+                <th class="text-center">Ad</th>
+                <th class="text-center">Soyad</th>
+                <th class="text-center">Telefon</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ad</td>
+                    <td>@item.soyad</td>
+                    <td>@item.telefon</td>
+                    @*
+                        
+                    *@
+
+                    <td>
+                        <a href="@Url.Action("Profile","Account",new { id=item.id })" class="btn btn-primary  ">Bilgi</a> |
+                        @if (logonAdmin != null)
+                        {
+
+                        <a href="@Url.Action("ProfileEdit", "Account", new { id = item.id })" class="btn btn-warning">
+                            <span class="glyphicon glyphicon-edit"></span>Düzenle
+                        </a>
+                            <button type="button" onclick="Delete('@Url.Action("Delete","Account", new { id = item.id })')" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-trash"></span> Sil</button>
+                        }
+                        else
+                        {
+
+                            <a href="@Url.Action("ProfileEdit", "Account", new { id = item.id })" class="btn btn-warning  disabled">
+                                <span class="glyphicon glyphicon-edit"></span>Düzenle</a>
+
+                            <a type="button" onclick="Delete('@Url.Action("Delete","Account", new { id = item.id })')" class="btn btn-danger disabled">
+                               <span class="glyphicon glyphicon-trash"></span> Sil</a>
+
+                        }
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <hr />
+    @if (logonAdmin == null)
+    {
+        <div class="row">
+            <div class="col-md-12 text-center" style="margin-top:20px;">
+                Bilgileri Güncellemek için <a href="~/Account/Login" style="font-weight:bold">Admin</a> olarak giriş yapabilirsiniz!
+            </div>
+        </div>
+        <hr />
+
+    }
+    <br />
+
+</div>
+
+
+
+@if (TempData["resultInfo"] != null && TempData["resultInfo"] != "")
+{
+
+
+   @Html.Partial("InfoModal");
+
+    <script>
+        $('#exampleModalCenter').modal('show');
+    </script>
+
+}
+@Html.Partial("ResultControl","Silmek istediğinize emin misiniz?")
+
+

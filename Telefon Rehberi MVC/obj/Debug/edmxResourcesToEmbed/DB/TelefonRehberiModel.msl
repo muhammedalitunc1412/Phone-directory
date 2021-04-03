@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TelefonRehberiDBModelStoreContainer" CdmEntityContainer="TelefonRehberiDBEntity">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="IsTypeOf(TelefonRehberiDBModel.Admin)">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="adminUserName" ColumnName="adminUserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calisanlar">
+      <EntityTypeMapping TypeName="TelefonRehberiDBModel.Calisanlar">
+        <MappingFragment StoreEntitySet="Calisanlar">
+          <ScalarProperty Name="yoneticiID" ColumnName="yoneticiID" />
+          <ScalarProperty Name="departmanID" ColumnName="departmanID" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="calisanID" ColumnName="calisanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departmanlar">
+      <EntityTypeMapping TypeName="TelefonRehberiDBModel.Departmanlar">
+        <MappingFragment StoreEntitySet="Departmanlar">
+          <ScalarProperty Name="departmanAdi" ColumnName="departmanAdi" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
